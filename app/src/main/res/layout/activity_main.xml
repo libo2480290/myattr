@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:test = "http://schemas.android.com/apk/res/com.example.libo.myapplicationattr"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hello"
+        />
+
+    <com.example.libo.myapplicationattr.MyView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        test:title="wo shi zi ji de shu xing"
+        test:textSize="20px"
+        test:textColor="#f00"
+        />
+</LinearLayout>
