@@ -14,11 +14,11 @@ public class MyView extends TextView {
 
     public MyView(Context context, AttributeSet attrs) {
         super(context, attrs);
-        TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.MyView);
-        int textColor = a.getColor(R.styleable.MyView_textColor,
+        TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.MyAttr);
+        int textColor = a.getColor(R.styleable.MyAttr_textColor,
                 0XFFFFFFFF);
-        float textSize = a.getDimension(R.styleable.MyView_textSize, 36);
-        mString = a.getString(R.styleable.MyView_title);
+        float textSize = a.getDimension(R.styleable.MyAttr_textSize, 36);
+        mString = a.getString(R.styleable.MyAttr_title);
         setText(mString);
         setTextSize(textSize);
         setTextColor(textColor);
